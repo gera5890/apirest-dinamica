@@ -9,9 +9,8 @@ ini_set("error_log","/opt/lampp/htdocs/apirest-dinamica/php_error_log");  //ruta
 include_once "models/connection.php";
 
 //comprobar conexion
-echo '<pre>'; print_r(Connection::connect()); echo '</pre>';
+//echo '<pre>'; print_r(Connection::connect()); echo '</pre>';
 
-return;
 
 include_once "controllers/routesControllers.php";
 
