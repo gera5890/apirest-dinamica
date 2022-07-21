@@ -1,0 +1,12 @@
+Options +FollowSymlinks
+
+#sirve para proteger los archivos, los indexa para que no entren desde esa url como ubicacion
+Options All -Indexes 
+
+#permite trabajar con las urls amigables siempre que este el rewrite RewriteEngine on
+Options -MultiViews
+RewriteEngine On
+
+#condiciones para redireccionar siempre al index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
